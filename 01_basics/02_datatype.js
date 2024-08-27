@@ -1,3 +1,5 @@
+"use strict";// treat all js code as the new version code
+
 // datatypes in js
 // String
 // Number
