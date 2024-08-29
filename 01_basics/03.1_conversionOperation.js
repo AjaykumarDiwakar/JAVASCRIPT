@@ -27,4 +27,19 @@ console.log("1"+2+3);
 console.log(1+"2"+3);
 console.log(1+2+"3");
 
+// some more convesrion
+
+console.log(+true);
+console.log(+"");
+
+
+//post increament and pre increament operator 
+
+let value1=100
+value1++
+console.log(value1);
+console.log("Old value: "+value1+" value1++ : "+value1++);
+console.log("Old value: "+value1+" ++value1 : "+(++value1));
+
+
 
