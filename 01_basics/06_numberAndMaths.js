@@ -68,14 +68,6 @@ let num=Math.floor(Math.random()*(max-min+1)+min)
           eleven will be bet 10.something and adding 10 to it will give us 20 as floor value..
 
 
-
-
-
-
-
-
-
-
 */ 
 
 
