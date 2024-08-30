@@ -40,3 +40,26 @@ const myFunc=function(){
 
 console.log("Function: "+typeof myFunc);
 
+//Primitive variables-> are declared in the Stack Memory
+
+let a=34;
+let b=a;
+b=20
+console.log(a);//a=34 as b=a here store a copy of a in b so change in b will not affect a
+console.log(b);
+
+
+// Non-Primitive variables take space in Heap
+
+const obj1={
+    email:"user@gmail.com",
+    phone:9310807934
+}
+
+const obj2=obj1 //here the reference is copied so any change in obj2 will be reflected in obj1
+obj2.email="diwakar@gmail.com"
+console.log("obj1.email: "+obj1.email);
+console.log("obj2.email: "+obj2.email);
+
+
+
