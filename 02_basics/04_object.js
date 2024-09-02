@@ -63,3 +63,20 @@ let data=[
 console.log(Object.keys(merged2));
 console.log(Object.values(merged2));
 console.log(Object.entries(merged2));
+//object destructuring
+
+const obj5={
+    name:"Ajay",
+    email:"kumar@google.com",
+    cousre:"Java Full Stack",
+    courseInstructor:"XYZ Ltd"
+}
+// const {courseInstructor}=obj5;//Now courseInstructor is variable which is holding data
+// console.log(courseInstructor);
+
+const {courseInstructor:instructor}=obj5;
+console.log(instructor);//By the above type of destructuring we can access courseInstructor using instructor
+// console.log(courseInstructor);we cannot use courseInstructor now as we need to use instructor now
+
+
+
