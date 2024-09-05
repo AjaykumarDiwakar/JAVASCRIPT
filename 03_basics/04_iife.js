@@ -37,5 +37,3 @@ the function  execution otherwise if we write any iife after it(current iife) we
     console.log("Hello ,",name);
     
 });
-
-
