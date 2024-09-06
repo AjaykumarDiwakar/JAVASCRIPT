@@ -1,4 +1,4 @@
-let option =1;
+let option ="one";
 
 switch (option) {
     case "one":
