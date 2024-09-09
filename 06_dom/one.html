@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM</title>
+</head>
+<style>
+    .bg-dark{
+        background: black;
+        color: white;
+    }
+</style>
+<body class="bg-dark">
+    <div>
+        <h1 class="heading" id="title">DOM learning on Chai and code</h1>
+        <p class="para" id="para">Lorem ipsum dolor sit amet.<span style="display: none;">Hello Buddy</span></p>
+    </div>
+    <ul>
+        <li class="item">Hello, Ajay</li>
+        <li class="item">Hello, Ajay</li>
+        <li class="item">Hello, Ajay</li>
+        <li class="item">Hello, Ajay</li>
+    </ul>   
+</body>
+</html>
+<!-- 
+let val=document.getElementById('para')
+
+
+-> val.innerHTML
+'Lorem ipsum dolor sit amet.<span style="display: none;">Hello Buddy</span>'
+
+
+-> val.innerText ->we get the text which is actually visible
+'Lorem ipsum dolor sit amet.'
+
+->val.textContent ->overall text that can be either visible or hidden
+'Lorem ipsum dolor sit amet.Hello Buddy'
+
+//Access class name using id
+->val.className
+'para'
+
+//Access class name using id
+
+->val.getAttribute('class')
+ 'para'
+
+ //similarly you can access other attribute
+
+ //setAttribute()
+ ->val.setAttribute('class','para graph') it does overwrite
+  
+it means jo attribute apne set kiya hai uski previous value overwrite ho jaayegi
+
+ now 
+    val.getAttribute('class')
+       'para graph'
+
+
+
+
+-->
