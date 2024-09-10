@@ -18,9 +18,9 @@
     </div>
     <ul>
         <li class="item">Hello, Ajay</li>
-        <li class="item">Hello, Ajay</li>
-        <li class="item">Hello, Ajay</li>
-        <li class="item">Hello, Ajay</li>
+        <li class="item">Hello, Aditya</li>
+        <li class="item">Hello, Anuj</li>
+        <li class="item">Hello, Himanshu</li>
     </ul>   
 </body>
 </html>
@@ -58,6 +58,28 @@ it means jo attribute apne set kiya hai uski previous value overwrite ho jaayegi
     val.getAttribute('class')
        'para graph'
 
+->document.getElementsByClassName('para') it will return the HTMLCollection that cannot be iterate using
+ForEach HTMLCollection [p#para.para.graph, para: p#para.para.graph]
+
+
+
+document.querySelector('.para')-> it will return a single value(Element with the specified selector)
+
+//if multiple tag have same selector then it will return the first one from the matching
+
+
+// querySelectorAll() will return NodeList of the matched tag
+->document.querySelectorAll('.item')
+NodeList []
+
+in order to perform any operation on NodeList we have to perform that operation on the indivisual 
+element of the NodeList ... if we do something like NodeList.style.border='2px' then we will get error
+...so first we have to access indivisual element of the NodeList using indexing .
+like  NodeList[1].style.border='2px' -> zero based indexing is used
+
+//we can operate over the NodeList in the Following manner or we can first store NodeList Coming from the 
+//QuerySelectorAll and then use forEach
+document.querySelectorAll('.item').forEach((item)=>{item.style.border='2px solid red'})
 
 
 
