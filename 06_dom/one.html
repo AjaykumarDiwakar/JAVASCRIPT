@@ -58,9 +58,10 @@ it means jo attribute apne set kiya hai uski previous value overwrite ho jaayegi
     val.getAttribute('class')
        'para graph'
 
-->document.getElementsByClassName('para') it will return the HTMLCollection that cannot be iterate using
+->let col=document.getElementsByClassName('para') it will return the HTMLCollection that cannot be iterate using
 ForEach HTMLCollection [p#para.para.graph, para: p#para.para.graph]
-
+ in order to convert this collection into the Array we can use the following syntax
+ let arr=Array.from(col)
 
 
 document.querySelector('.para')-> it will return a single value(Element with the specified selector)
