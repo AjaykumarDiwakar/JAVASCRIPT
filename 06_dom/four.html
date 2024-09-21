@@ -23,5 +23,33 @@ function addLanguage(value){
 addLanguage("Python")
 addLanguage("java")
 
+function addOptiLanguage(language){
+    const li=document.createElement('li')
+    li.appendChild(document.createTextNode(`${language}`))
+    li.style.background='yellow'
+    li.style.color='red'
+    document.querySelector('.language').appendChild(li)
+
+}
+
+addOptiLanguage("Sab language badiya hi hai")
+
+//Edit
+
+const secondLang=document.querySelector("li:nth-child(2)")
+console.log(secondLang);
+const newli=document.createElement('li');
+newli.textContent="Mojo"
+secondLang.replaceWith(newli)
+
+// Edit
+const firstLang=document.querySelector("li:first-child")
+firstLang.outerHTML="<li>Typescript</li>"
+
+// remove
+
+const lastLang=document.querySelector("li:last-child")
+lastLang.remove()
+
 </script>
 </html>
