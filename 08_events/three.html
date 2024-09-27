@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        
+        <button id="start">Start Time</button>
+    </p>
+    <p>
+        <button id="stop">Stop Time</button>
+
+    </p>
+    <p>
+        
+        <button id="startc">Start color</button>
+    </p>
+    <p>
+        <button id="stopc">Stop color</button>
+
+    </p>
+    
+    <script>
+
+const start=document.querySelector('#start')
+const stop=document.querySelector('#stop')
+console.log(start);
+console.log(stop);
+
+const st=function(){
+    console.log(new Date().toLocaleTimeString());
+}
+let interval;
+const sIn=function(){
+    console.log("-----------STARTED--------------");
+    
+    interval=setInterval(st,1000)
+
+}
+
+start.addEventListener('click',sIn)
+
+const stopf=function(){
+    clearInterval(interval)
+    console.log("---------------END--------------");
+    
+}
+stop.addEventListener('click',stopf)
+// document.querySelector('body').style.background=`rgb(123,34,33)`
+// document.querySelector('body').style.background='red'
+
+
+let interval1;
+
+const changeColor=function(){
+    let r=Math.floor(Math.random()*256)
+    let g=Math.floor(Math.random()*256)
+    let b=Math.floor(Math.random()*256)
+
+    document.querySelector('body').style.background=`rgb(${r},${g},${b})`
+}
+
+const applyInterval=function(){
+    interval1=setInterval(changeColor,1000)
+}
+
+document.querySelector('#startc').addEventListener('click',applyInterval)
+
+
+document.querySelector('#stopc').addEventListener('click',()=>{
+
+    clearInterval(interval1)
+
+})
+
+
+    </script>
+</body>
+</html>
