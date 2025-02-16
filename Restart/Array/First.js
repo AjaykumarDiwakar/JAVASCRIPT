@@ -8,3 +8,10 @@ for(let i=0;i<arr.length/2;i++){
     console.log(arr[i]);
 }
 
+//concatenation
+console.log("1"+"1");
+
+//separation
+
+console.log("1",1);
+
